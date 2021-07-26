@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hello OpenCV.js</title>
+	<script src="jquery.js"></script>
+</head>
+
+<body>
+	<h2>Hello OpenCV.js</h2>
+	<button id="test">TEST</button>
+	<script type="module">
+		import { euclideanAlgorithm, EuclideanDistTracker } from './track.js'
+
+		$(document).ready(function () {
+			$("#test").click(function (event) {
+				var test = new EuclideanDistTracker();
+				console.log(test.getCount());
+			});
+		});
+	</script>
+</body>
+
+</html>
